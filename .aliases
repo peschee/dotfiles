@@ -12,6 +12,13 @@ else # OS X `ls`
 	colorflag="-G"
 fi
 
+# Re-initialize shell
+if [ -n "$ZSH_VERSION" ]; then
+    alias resource="source $HOME/.zshrc; source $HOME/.zprofile";
+else
+    alias resource="source $HOME/.bashrc";
+fi
+
 # List all files colorized in long format
 alias l="ls -AlFh ${colorflag}"
 
@@ -116,6 +123,3 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Homebrew
 alias bu='brew up; brew upgrade; brew cleanup --purge'
-
-# Homebrew cask
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"

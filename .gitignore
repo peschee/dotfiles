@@ -1,4 +1,4 @@
-### /Users/peschehimself/.gitignore-boilerplates/Android.gitignore
+### .gitignore-boilerplates/Android.gitignore
 
 # built application files
 *.apk
@@ -29,12 +29,7 @@ proguard/
 *.iws
 .idea/
 
-### /Users/peschehimself/.gitignore-boilerplates/Compass.gitignore
-
-.sass-cache
-
-
-### /Users/peschehimself/.gitignore-boilerplates/Drupal.gitignore
+### .gitignore-boilerplates/Drupal.gitignore
 
 # Ignore paths that contain generated content.
 cache/
@@ -55,7 +50,7 @@ sites/all/README.txt
 sites/all/modules/README.txt
 sites/all/themes/README.txt
 
-### /Users/peschehimself/.gitignore-boilerplates/Global/Eclipse.gitignore
+### .gitignore-boilerplates/Global/Eclipse.gitignore
 
 *.pydevproject
 .project
@@ -83,7 +78,7 @@ local.properties
 # PDT-specific
 .buildpath
 
-### /Users/peschehimself/.gitignore-boilerplates/ExpressionEngine.gitignore
+### .gitignore-boilerplates/ExpressionEngine.gitignore
 
 .DS_Store
 
@@ -101,7 +96,7 @@ thumbs/
 _thumbs/
 */expressionengine/cache/*
 
-### /Users/peschehimself/.gitignore-boilerplates/Java.gitignore
+### .gitignore-boilerplates/Java.gitignore
 
 *.class
 
@@ -110,8 +105,7 @@ _thumbs/
 *.war
 *.ear
 
-
-### /Users/peschehimself/.gitignore-boilerplates/Jboss.gitignore
+### .gitignore-boilerplates/Jboss.gitignore
 
 jboss/server/all/deploy/project.ext
 jboss/server/default/deploy/project.ext
@@ -129,74 +123,18 @@ jboss/server/minimal/tmp/**/*
 jboss/server/minimal/data/**/*
 jboss/server/minimal/work/**/*
 
-
-### /Users/peschehimself/.gitignore-boilerplates/LaTeX.gitignore
-
-*.acn
-*.acr
-*.alg
-*.aux
-*.bbl
-*.blg
-*.dvi
-*.fdb_latexmk
-*.glg
-*.glo
-*.gls
-*.idx
-*.ilg
-*.ind
-*.ist
-*.lof
-*.log
-*.lot
-*.maf
-*.mtc
-*.mtc0
-*.nav
-*.nlo
-*.out
-*.pdfsync
-*.ps
-*.snm
-*.synctex.gz
-*.toc
-*.vrb
-*.xdy
-*.tdo
-
-
-### /Users/peschehimself/.gitignore-boilerplates/Global/Linux.gitignore
+### .gitignore-boilerplates/Global/Linux.gitignore
 
 .*
 !.gitignore
 *~
 
-
-### /Users/peschehimself/.gitignore-boilerplates/Global/PhPStorm.gitignore
+### .gitignore-boilerplates/Global/PhPStorm.gitignore
 
 .iidea/
 atlassian-ide-plugin.xml
 
-### /Users/peschehimself/.gitignore-boilerplates/Node.gitignore
-
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-
-pids
-logs
-results
-
-npm-debug.log
-node_modules
-
-### /Users/peschehimself/.gitignore-boilerplates/Objective-C.gitignore
+### .gitignore-boilerplates/Objective-C.gitignore
 
 # Xcode
 .DS_Store
@@ -216,57 +154,15 @@ DerivedData
 .idea/
 *.hmap
 
+### .gitignore-boilerplates/Global/SASS.gitignore
 
-### /Users/peschehimself/.gitignore-boilerplates/Python.gitignore
-
-*.py[cod]
-
-# C extensions
-*.so
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-var
-sdist
-develop-eggs
-.installed.cfg
-lib64
-__pycache__
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-
-### /Users/peschehimself/.gitignore-boilerplates/Global/SASS.gitignore
-
-### SASS Ignores - "Sassy CSS" http://sass-lang.com/
 *.sass-cache
 
-
-### /Users/peschehimself/.gitignore-boilerplates/Global/SVN.gitignore
+### .gitignore-boilerplates/Global/SVN.gitignore
 
 .svn/
 
-
-### /Users/peschehimself/.gitignore-boilerplates/Symfony2.gitignore
+### .gitignore-boilerplates/Symfony2.gitignore
 
 # Symfony directories
 */logs/*
@@ -278,15 +174,13 @@ web/bundles/*
 app/config/parameters.ini
 app/config/parameters.yml
 
-
-### /Users/peschehimself/.gitignore-boilerplates/Global/TextMate.gitignore
+### .gitignore-boilerplates/Global/TextMate.gitignore
 
 *.tmproj
 *.tmproject
 tmtags
 
-
-### /Users/peschehimself/.gitignore-boilerplates/Global/vim.gitignore
+### .gitignore-boilerplates/Global/vim.gitignore
 
 .*.s[a-w][a-z]
 *.un~
