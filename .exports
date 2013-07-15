@@ -23,3 +23,10 @@ export GREP_OPTIONS="--color=auto"
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# LSCOLORS
+eval `/usr/local/opt/coreutils/libexec/gnubin/dircolors ~/.dir_colors`
+
+# Node options
+export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+export JS_CMD="node"
