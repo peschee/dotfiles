@@ -123,3 +123,6 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Homebrew
 alias bu='brew up; brew upgrade; brew cleanup --purge'
+
+# Compass
+alias cw='compass watch'
