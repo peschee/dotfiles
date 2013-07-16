@@ -31,7 +31,11 @@ brew install wget --enable-iri
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
+
+# Install proper php stuff
 brew install php54
+brew install php54-intl
+brew install php54-xdebug
 
 # These two formulae didn’t work well last time I tried them:
 #brew install homebrew/dupes/vim
@@ -39,7 +43,6 @@ brew install php54
 
 # Install other useful binaries
 brew install ack
-#brew install exiv2
 brew install git
 brew install imagemagick
 brew install lynx
