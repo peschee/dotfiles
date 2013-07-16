@@ -46,7 +46,6 @@ plugins=(
     colored-man
     composer
     git-extras
-    git-flow
     gitfast
     jira
     npm
