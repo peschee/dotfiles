@@ -82,3 +82,13 @@
 
 [pull]
     rebase = true
+
+[diff]
+	tool = Kaleidoscope
+
+[difftool]
+	prompt = false
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+
