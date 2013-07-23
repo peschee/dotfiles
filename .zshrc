@@ -48,6 +48,7 @@ plugins=(
     git-extras
     gitfast
     jira
+    last-working-dir
     npm
     osx
     rand-quote
