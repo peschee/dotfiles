@@ -1,0 +1,30 @@
+#!/bin/bash
+
+version="$1"
+
+# If the value passed is php53, switch to PHP 5.3
+if [ -n "$version" ] && [ $version == "php53" ]; then
+    brew unlink php54 > /dev/null 2>&1
+    brew link php53 > /dev/null 2>&1
+    ln -sf `brew list php53 | grep libphp` /usr/local/lib/libphp5.so
+    ln -sf `brew list php53 | grep 'bin/php$'` ~/bin/php
+    echo "Switched to 5.3."
+
+# if switch to PHP 5.4
+else
+    brew unlink php53 > /dev/null 2>&1
+    brew link php54 > /dev/null 2>&1
+    ln -sf `brew list php54 | grep libphp` /usr/local/lib/libphp5.so
+    ln -sf `brew list php54 | grep 'bin/php$'` ~/bin/php
+    echo "Switched to 5.4."
+fi
+
+echo "Restarting Apache."
+
+# Kill all apache processes so the new libphp.so file is loaded correctly
+sudo pkill -9 httpd
+
+# Restart apache
+sudo apachectl -k restart > /dev/null 2>&1
+
+echo "Done!"
