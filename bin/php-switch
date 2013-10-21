@@ -6,6 +6,7 @@ version="$1"
 if [ -n "$version" ] && [ $version == "php53" ]; then
     brew unlink php54 > /dev/null 2>&1
     brew link php53 > /dev/null 2>&1
+    pear config-set php_ini /usr/local/etc/php/5.3/php.ini
     ln -sf `brew list php53 | grep libphp` /usr/local/lib/libphp5.so
     ln -sf `brew list php53 | grep 'bin/php$'` ~/bin/php
     echo "Switched to 5.3."
@@ -14,6 +15,7 @@ if [ -n "$version" ] && [ $version == "php53" ]; then
 else
     brew unlink php53 > /dev/null 2>&1
     brew link php54 > /dev/null 2>&1
+    pear config-set php_ini /usr/local/etc/php/5.4/php.ini
     ln -sf `brew list php54 | grep libphp` /usr/local/lib/libphp5.so
     ln -sf `brew list php54 | grep 'bin/php$'` ~/bin/php
     echo "Switched to 5.4."
