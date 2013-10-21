@@ -42,7 +42,7 @@
 
 [apply]
 	# Detect whitespace errors when applying a patch
-	whitespace = fix
+	whitespace = warn
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
@@ -78,7 +78,7 @@
 	merge = refs/heads/master
 
 [push]
-	default = matching
+	default = upstream
 
 [pull]
     rebase = true
@@ -92,3 +92,6 @@
 [difftool "Kaleidoscope"]
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 
+[user]
+	name = Peter Siska
+	email = pesche@gridonic.ch
