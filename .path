@@ -1,0 +1,23 @@
+# Add local bin directories to `$PATH`
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Add npm binaries to `$PATH`
+PATH="/usr/local/share/npm/bin:$PATH"
+PATH="$HOME/node_modules/.bin:$PATH"
+
+# fpath for zsh
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# Add MacTex binaries to $PATH
+PATH="/usr/texbin:$PATH"
+
+# Add PHP bin path
+PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+
+# RVM path
+PATH:"$HOME/.rvm/bin:$PATH"
+
+# Add `~/bin` to the `$PATH`
+PATH="$HOME/bin:$PATH"
+
+export PATH
