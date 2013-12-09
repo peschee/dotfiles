@@ -5,9 +5,6 @@ PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/usr/local/share/npm/bin:$PATH"
 PATH="$HOME/node_modules/.bin:$PATH"
 
-# fpath for zsh
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 # Add MacTex binaries to $PATH
 PATH="/usr/texbin:$PATH"
 
@@ -15,9 +12,12 @@ PATH="/usr/texbin:$PATH"
 PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 
 # RVM path
-PATH:"$HOME/.rvm/bin:$PATH"
+PATH="$HOME/.rvm/bin:$PATH"
 
 # Add `~/bin` to the `$PATH`
 PATH="$HOME/bin:$PATH"
+
+# fpath for zsh
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 export PATH
