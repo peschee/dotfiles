@@ -81,10 +81,11 @@
 	default = upstream
 
 [pull]
-    rebase = true
+	rebase = true
 
 [diff]
 	tool = Kaleidoscope
+    renameLimit = 999
 
 [difftool]
 	prompt = false
@@ -95,3 +96,9 @@
 [user]
 	name = Peter Siska
 	email = pesche@gridonic.ch
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
