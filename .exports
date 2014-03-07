@@ -28,7 +28,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 eval `/usr/local/opt/coreutils/libexec/gnubin/dircolors ~/.dir_colors`
 
 # Node options
-export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+export NODE_PATH="$NODE_PATH:/usr/local/share/npm/lib/node_modules:/usr/local/lib/node_modules"
 export JS_CMD="node"
 
 # Android SDK
