@@ -1,9 +1,9 @@
 [alias]
-    st = status
-    ci = commit
-    co = checkout
-    br = branch
-    a = add -A .
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	a = add -A .
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -39,16 +39,24 @@
 
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
+
 	# Find branches containing commit
 	fb = "!f() { git branch -a --contains $1; }; f"
+
 	# Find tags containing commit
 	ft = "!f() { git describe --always --contains $1; }; f"
+
 	# Find commits by source code
 	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+
 	# Find commits by commit message
 	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+
 	# Remove branches that have already been merged with master
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+	# Ammend commit with no message
+	cmam = "commit --amend --no-edit"
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -58,11 +66,13 @@
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error.
 	# [default] trailing-space: looks for spaces at the end of a line
 	# [default] space-before-tab: looks for spaces before tabs at the beginning of
 	# a line
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
@@ -73,27 +83,24 @@
 	ui = auto
 
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    emote = green
+	current = yellow reverse
+	local = yellow
+	emote = green
+
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-
-# Use `origin` as the default remote on the `master` branch in all cases
-[branch "master"]
-	remote = origin
-	merge = refs/heads/master
 
 [push]
 	default = upstream
@@ -103,7 +110,7 @@
 
 [diff]
 	tool = Kaleidoscope
-    renameLimit = 999
+	renameLimit = 999
 
 [difftool]
 	prompt = false

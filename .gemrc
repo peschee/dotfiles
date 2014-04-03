@@ -4,8 +4,7 @@ gem: --no-ri --no-rdoc
 :backtrace: false
 :update_sources: true
 :benchmark: false
-:verbose: true
+:verbose: false
 :sources:
 - http://gems.rubyforge.org/
-- http://gemcutter.org
 - http://gemcutter.org
