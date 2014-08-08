@@ -34,7 +34,7 @@ install pv
 install git
 install imagemagick --with-webp
 install lynx
-install node
+install node --with-npm
 install pigz
 install rename
 install rhino
