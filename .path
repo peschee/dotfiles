@@ -9,10 +9,11 @@ PATH="$HOME/node_modules/.bin:$PATH"
 PATH="/usr/texbin:$PATH"
 
 # Add PHP bin path
-PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
-# RVM path
-PATH="$HOME/.rvm/bin:$PATH"
+# Setup rbenv
+PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Add `~/bin` to the `$PATH`
 PATH="$HOME/bin:$PATH"
