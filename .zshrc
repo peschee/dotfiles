@@ -42,23 +42,20 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
     autojump
     brew
+    brew-cask
     bower
     colored-man
     composer
+    docker
     git-extras
-    gitfast
-    jira
+    git-flow
     last-working-dir
     npm
     osx
-    rand-quote
-    rvm
-    svn
+    rsync
     symfony2
     urltools
     vagrant
-    web-search
 )
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.zprofile
