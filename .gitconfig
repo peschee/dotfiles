@@ -165,3 +165,5 @@
 [user]
 	name = Peter Siska
 	email = pesche@gridonic.ch
+[pull]
+	rebase = true
