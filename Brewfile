@@ -1,5 +1,8 @@
 # Install command-line tools using Homebrew
 # Usage: `brew bundle Brewfile`
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap mcuadros/homebrew-hhvm
 
 # Make sure we’re using the latest Homebrew
 update
@@ -61,6 +64,7 @@ install ucspi-tcp # `tcpserver` et al.
 install webkit2png
 install xpdf
 install zopfli
+install hhvm
 
 # Remove outdated versions from the cellar
 cleanup
