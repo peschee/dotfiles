@@ -41,7 +41,7 @@ alias week='date +%V'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup --purge; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup --purge; npm update -g; gem update --system; gem update'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -73,7 +73,7 @@ jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources
 unset jscbin;
 
 # Trim new lines and copy to clipboard
-alias cp=e"tr -d '\n' | pbcopy"
+alias cb=e"tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -144,3 +144,15 @@ alias bu='brew up; brew upgrade; brew cleanup --purge'
 
 # Mou
 alias mou='open -a Mou'
+
+# Git stats
+alias git-stats='git shortlog -s -n'
+
+# Vendor everything
+# http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/
+alias b="bundle"
+alias bui="b install --path vendor"
+alias buil="bi --local"
+alias buu="b update"
+alias bue="b exec"
+alias buinit="bi && b package && echo 'vendor/ruby' >> .gitignore"
