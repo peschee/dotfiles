@@ -130,6 +130,14 @@
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
 	default = matching
 
+[pull]
+
+	rebase = true
+
+[user]
+	name = Peter Siska
+	email = pesche@gridonic.ch
+
 # URL shorthands
 
 [url "git@github.com:"]
@@ -151,19 +159,3 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
-
-[diff]
-	tool = Kaleidoscope
-	renameLimit = 999
-
-[difftool]
-	prompt = false
-
-[difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-
-[user]
-	name = Peter Siska
-	email = pesche@gridonic.ch
-[pull]
-	rebase = true
