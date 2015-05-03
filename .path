@@ -8,6 +8,14 @@ PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# Add haskell
+# Needs brew cask install haskell-plattform
+PATH="$HOME/Library/Haskell/bin:$PATH"
+
+
+# Add composer to the `$PATH`
+PATH="$PATH:$HOME/.composer/vendor/bin"
+
 # Add `~/bin` to the `$PATH`
 PATH="$HOME/bin:$PATH"
 
