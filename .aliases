@@ -34,6 +34,9 @@ alias ls="command ls ${colorflag}"
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
+# Syntax highlighting
+alias pcat="pygmentize -f terminal256 -O style=native -g"
+
 # Get week number
 alias week='date +%V'
 
