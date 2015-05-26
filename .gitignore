@@ -5,6 +5,7 @@
 .classpath
 .project
 
+# OSX
 .DS_Store
 
 # Package Files #
@@ -12,7 +13,30 @@
 *.war
 *.ear
 
+# IntelliJ https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
+
+## User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+## Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+## Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+## Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+# JIRA plugin
 atlassian-ide-plugin.xml
+
+# SASS
 .sass-cache
-.idea
-.htaccess
