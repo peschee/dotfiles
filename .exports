@@ -35,7 +35,7 @@ export JS_CMD="node";
 export ANDROID_HOME="/usr/local/opt/android-sdk";
 
 # JAVA HOME
-export JAVA_HOME="/usr/libexec/java_home";
+export JAVA_HOME=$("/usr/libexec/java_home");
 
 # Go
 # https://golang.org/doc/code.html#GOPATH
