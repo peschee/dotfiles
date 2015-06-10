@@ -12,7 +12,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Needs brew cask install haskell-plattform
 PATH="$HOME/Library/Haskell/bin:$PATH"
 
-
 # Add composer to the `$PATH`
 PATH="$PATH:$HOME/.composer/vendor/bin"
 
@@ -21,6 +20,9 @@ PATH="$HOME/bin:$PATH"
 
 # Add Go apps
 PATH="$HOME/go/bin:$PATH"
+
+# Add gnu tar
+PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 
 # fpath for zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
