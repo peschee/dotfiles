@@ -1,3 +1,1 @@
 git config --global push.default simple
-
-source "$HOME/.console/console.rc" 2>/dev/null

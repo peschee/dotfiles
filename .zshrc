@@ -59,3 +59,4 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source "$HOME/.console/console.rc" 2>/dev/null
