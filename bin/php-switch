@@ -1,26 +1,21 @@
 #!/bin/bash
 
-version="$1"
+argument="$1"
+version="5.6"
+version_string="php56"
 
-# If the value passed is php54, switch to PHP 5.4
-if [ -n "$version" ] && [ $version == "php54" ]; then
-    brew unlink php54 > /dev/null 2>&1
-    brew link php54 > /dev/null 2>&1
-    pear config-set php_ini /usr/local/etc/php/5.4/php.ini
-    ln -sf `brew list php54 | grep libphp` /usr/local/lib/libphp5.so
-    ln -sf `brew list php54 | grep 'bin/php$'` ~/bin/php
-    echo "Switched to 5.4."
-
-# if switch to PHP 5.5
-else
-    brew unlink php55 > /dev/null 2>&1
-    brew link php55 > /dev/null 2>&1
-    pear config-set php_ini /usr/local/etc/php/5.5/php.ini
-    ln -sf `brew list php55 | grep libphp` /usr/local/lib/libphp5.so
-    ln -sf `brew list php55 | grep 'bin/php$'` ~/bin/php
-    echo "Switched to 5.5."
+if [ -n "$argument" ] && [ $argument == "php55" ]; then
+    version="5.5"
+    version_string=$argument
 fi
 
+brew unlink $version > /dev/null 2>&1
+brew link $version > /dev/null 2>&1
+pear config-set php_ini /usr/local/etc/php/$version/php.ini
+ln -sf `brew list $version_string | grep libphp` /usr/local/lib/libphp5.so
+ln -sf `brew list $version_string | grep 'bin/php$'` ~/bin/php
+
+echo "Switched to $version."
 echo "Restarting Apache."
 
 # Kill all apache processes so the new libphp.so file is loaded correctly
