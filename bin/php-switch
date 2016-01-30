@@ -9,9 +9,8 @@ if [ -n "$argument" ] && [ $argument == "php55" ]; then
     version_string=$argument
 fi
 
-brew unlink $version > /dev/null 2>&1
-brew link $version > /dev/null 2>&1
-pear config-set php_ini /usr/local/etc/php/$version/php.ini
+brew link --overwrite ${version_string} > /dev/null 2>&1
+pear config-set php_ini /usr/local/etc/php/${version}/php.ini
 ln -sf `brew list $version_string | grep libphp` /usr/local/lib/libphp5.so
 ln -sf `brew list $version_string | grep 'bin/php$'` ~/bin/php
 
