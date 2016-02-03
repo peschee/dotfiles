@@ -2,7 +2,7 @@
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Add PHP bin path
-PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
+#PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 
 # Setup rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
