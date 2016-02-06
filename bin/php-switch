@@ -50,7 +50,7 @@ then
         done
         brew link "$php_version"
         brew services start "$php_version"
-        ln -sf `brew list $php_version | grep 'bin/php$'` ~/bin/php
+#        ln -sf `brew list $php_version | grep 'bin/php$'` ~/bin/php
 
         echo "All done!"
     else
