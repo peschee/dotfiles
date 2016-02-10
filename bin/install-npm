@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -0 -L http://npmjs.org/install.sh | sudo sh
